@@ -1,6 +1,6 @@
 package com.aktanyusuf.dto;
 
-import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,16 +10,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class DtoAddressIU{
 
-	@NotEmpty
+	@NotNull
 	private String city;
 	
-	@NotEmpty
+	@NotNull
 	private String district;
 	
-	@NotEmpty
+	@NotNull
 	private String neighborhood;
 	
-	@NotEmpty
+	@NotNull
 	private String street;
 	
 }

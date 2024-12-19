@@ -10,7 +10,7 @@ import com.aktanyusuf.controller.IRestAddressController;
 import com.aktanyusuf.controller.RestBaseController;
 import com.aktanyusuf.dto.DtoAddress;
 import com.aktanyusuf.dto.DtoAddressIU;
-import com.aktanyusuf.service.impl.AddressServiceImpl;
+import com.aktanyusuf.service.IAddressService;
 
 import jakarta.validation.Valid;
 
@@ -19,7 +19,7 @@ import jakarta.validation.Valid;
 public class RestAddressControllerImpl extends RestBaseController implements IRestAddressController {
 
 	@Autowired
-	AddressServiceImpl addressService;
+	IAddressService addressService;
 	
 	@PostMapping
 	@Override

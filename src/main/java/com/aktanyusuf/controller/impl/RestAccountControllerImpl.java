@@ -9,14 +9,14 @@ import com.aktanyusuf.controller.IRestAccountController;
 import com.aktanyusuf.controller.RestBaseController;
 import com.aktanyusuf.dto.DtoAccount;
 import com.aktanyusuf.dto.DtoAccountIU;
-import com.aktanyusuf.service.impl.AccountServiceImpl;
+import com.aktanyusuf.service.IAccountService;
 
 @RestController
 @RequestMapping("/rest/api/account")
 public class RestAccountControllerImpl extends RestBaseController implements IRestAccountController {
 
 	@Autowired
-	AccountServiceImpl accountService;
+	IAccountService accountService;
 
 	@PostMapping
 	@Override
