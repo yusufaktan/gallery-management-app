@@ -24,7 +24,7 @@ public class AddressServiceImpl implements IAddressService{
 		
 		DtoAddress dtoAddress = new DtoAddress();
 		BeanUtils.copyProperties(address, dtoAddress);
-
+	
 		return dtoAddress;
 	}
 

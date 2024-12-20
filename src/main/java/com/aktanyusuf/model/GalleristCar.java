@@ -24,20 +24,4 @@ public class GalleristCar extends BaseEntity{
 	@ManyToOne
 	private Car car;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
