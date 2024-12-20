@@ -45,7 +45,7 @@ public class GalleristServiceImpl implements IGalleristService{
 		
 		DtoAddress dtoAddress = new DtoAddress();
 		BeanUtils.copyProperties(optAddress, dtoAddress);
-		
+	
 		dtoGallerist.setAddress(dtoAddress);
 		
 		return dtoGallerist;

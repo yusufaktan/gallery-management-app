@@ -1,5 +1,7 @@
 package com.aktanyusuf.service.impl;
 
+import java.util.Date;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -18,6 +20,7 @@ public class AccountServiceImpl implements IAccountService{
 	public DtoAccount create(DtoAccountIU dtoAccountIU) {
 		Account account = new Account();
 		BeanUtils.copyProperties(dtoAccountIU, account);
+		account.setCreateTime(new Date());
 		accountRepository.save(account);
 		
 		DtoAccount dtoAccount = new DtoAccount();

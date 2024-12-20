@@ -7,5 +7,5 @@ import com.aktanyusuf.dto.DtoCustomerIU;
 public interface IRestCustomerController {
 
 	public RootEntity<DtoCustomer> create(DtoCustomerIU dtoCustomerIU);
-	
+
 }

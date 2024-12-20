@@ -48,4 +48,5 @@ public class Car extends BaseEntity{
 	@Column(name = "car_status_type")
 	@Enumerated(EnumType.STRING)
 	private CarStatusType carStatusType;
+	
 }

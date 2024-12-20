@@ -1,5 +1,6 @@
 package com.aktanyusuf.service.impl;
 
+import java.util.Date;
 import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
@@ -49,6 +50,7 @@ public class CustomerServiceImpl implements ICustomerService {
 		BeanUtils.copyProperties(dtoCustomerIU, customer);
 		customer.setAddress(optAddress.get());
 		customer.setAccount(optAccount.get());
+		customer.setCreateTime(new Date());
 		customerRepository.save(customer);
 
 		DtoAddress dtoAddress = new DtoAddress();

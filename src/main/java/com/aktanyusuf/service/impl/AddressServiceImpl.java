@@ -1,5 +1,7 @@
 package com.aktanyusuf.service.impl;
 
+import java.util.Date;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +22,7 @@ public class AddressServiceImpl implements IAddressService{
 	public DtoAddress create(DtoAddressIU dtoAddressIU) {
 		Address address = new Address();
 		BeanUtils.copyProperties(dtoAddressIU, address);
+		address.setCreateTime(new Date());
 		addressRepository.save(address);
 		
 		DtoAddress dtoAddress = new DtoAddress();
